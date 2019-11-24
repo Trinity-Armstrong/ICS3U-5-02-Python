@@ -13,13 +13,14 @@ def calculate(base, height):
 
     # Output
     print("")
-    print("The area of the triangle is {0}cm²".format(area))
+    print("The area of the triangle is {0}cm².".format(area))
 
 
 def main():
     # This function gets the base and height then calls the calculate function
+    
+    # Introduction
     print("We will be calculating the area of a triangle.")
-    print("")
 
     # Input
     while True:
@@ -34,10 +35,13 @@ def main():
                height_from_user == int(height_from_user):
                 break
             else:
-                print("Error!")
+                print("")
+                print("Error! Try again.")
         except Exception:
-            print("Error!")
             print("")
+            print("Error! Try again.")
+            print("")
+            
 
 
 if __name__ == "__main__":
